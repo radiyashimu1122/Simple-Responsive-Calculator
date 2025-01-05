@@ -1,11 +1,21 @@
-// Show surprise message when the box is clicked
-document.getElementById('box').addEventListener('click', function() {
- document.getElementById('box').style.display = 'none';
- document.getElementById('surprise-message').style.display = 'block';
-});
+const display = document.getElementById('display');
 
-// Show the box again when the "Open Again" button is clicked
-document.querySelector('.again-btn').addEventListener('click', function() {
- document.getElementById('box').style.display = 'flex';
- document.getElementById('surprise-message').style.display = 'none';
-});
+function appendValue(value) {
+  display.value += value;
+}
+
+function clearDisplay() {
+  display.value = '';
+}
+
+function deleteLastCharacter() {
+  display.value = display.value.slice(0, -1);
+}
+
+function calculateResult() {
+  try {
+    display.value = eval(display.value);
+  } catch {
+    display.value = 'Error';
+  }
+}
