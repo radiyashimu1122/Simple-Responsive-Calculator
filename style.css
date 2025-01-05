@@ -1,0 +1,146 @@
+/* Global Reset */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* Body and Main Container */
+body {
+ font-family: 'Arial', sans-serif;
+ background-image: url('https://images.unsplash.com/photo-1521747116042-5b9e1a4f1f72');
+ background-size: cover;
+ background-position: center;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ overflow: hidden;
+ background-attachment: fixed;
+}
+
+.main-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 20px;
+}
+
+/* Message Box */
+.message-box {
+ text-align: center;
+ background-color: rgba(0, 0, 0, 0.6);
+ border-radius: 30px;
+ padding: 40px;
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+ width: 80%;
+ max-width: 600px;
+}
+
+/* Main Heading */
+.main-heading {
+ font-size: 3rem;
+ color: #ff7e5f;
+ text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+ margin-bottom: 20px;
+}
+
+/* Sub Heading */
+.sub-heading {
+ font-size: 1.3rem;
+ color: #fff;
+ margin-bottom: 30px;
+}
+
+/* Surprise Box */
+.surprise-box {
+ background-color: #ff7e5f;
+ width: 260px;
+ height: 260px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
+ cursor: pointer;
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+ transition: transform 0.3s ease;
+}
+
+.surprise-box:hover {
+ transform: scale(1.1);
+}
+
+.box-text {
+ font-size: 1.6rem;
+ color: white;
+ text-align: center;
+}
+
+/* Surprise Message */
+.surprise-message {
+ display: none;
+ margin-top: 30px;
+}
+
+.surprise-message h2 {
+ font-size: 2rem;
+ color: #ff7e5f;
+ margin-bottom: 20px;
+}
+
+.love-img {
+ width: 100%;
+ height: auto;
+ border-radius: 15px;
+ margin-top: 20px;
+ box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4);
+}
+
+.message {
+ font-size: 1.5rem;
+ color: #fff;
+ margin-top: 20px;
+}
+
+.again-btn {
+ background-color: #ff7e5f;
+ color: white;
+ padding: 12px 30px;
+ font-size: 1.1rem;
+ cursor: pointer;
+ border: none;
+ border-radius: 5px;
+ margin-top: 20px;
+ transition: transform 0.3s ease;
+}
+
+.again-btn:hover {
+ transform: scale(1.1);
+ background-color: #fff;
+ color: #ff7e5f;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+ .main-heading {
+     font-size: 2.5rem;
+ }
+
+ .sub-heading {
+     font-size: 1rem;
+ }
+
+ .surprise-box {
+     width: 220px;
+     height: 220px;
+ }
+
+ .box-text {
+     font-size: 1.4rem;
+ }
+
+ .love-img {
+     width: 90%;
+ }
+}
